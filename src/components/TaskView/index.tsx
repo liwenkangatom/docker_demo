@@ -25,7 +25,7 @@ const TaskView = observer(() => {
         Add
       </button>
       {task.Todo.map((t) => (
-        <div>{t.details}</div>
+        <div key={t.id}>{t.details}</div>
       ))}
     </div>
   );
