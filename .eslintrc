@@ -1,14 +1,25 @@
 {
     "extends": [
         "eslint:recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:prettier/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended",
         "plugin:react/jsx-runtime",
-        "plugin:react-hooks/recommended",
-        "plugin:prettier/recommended",
-        "eslint-config-prettier"
+        "eslint-config-prettier",
+        "plugin:jsx-a11y/recommended"
     ],
     "ignorePatterns": ["dist"],
     "parser": "@typescript-eslint/parser",
-    "plugins": ["react-refresh", "prettier"]
+    "plugins": ["react-refresh", "prettier", "react", "jsx-a11y"],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
 }

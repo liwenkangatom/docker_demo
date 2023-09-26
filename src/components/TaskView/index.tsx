@@ -8,12 +8,12 @@ const TaskView = observer(() => {
   const [value, setValue] = useState("");
   return (
     <div>
-      <input
+    <input
         placeholder="new todo"
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
-      <button
+           <button
         onClick={() => {
           task.add({
             id: uuid(),
