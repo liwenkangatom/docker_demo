@@ -1,15 +1,15 @@
-import { Outlet, Link } from 'react-router-dom'
-import {styled} from 'styled-components'
+import { Outlet, Link } from "react-router-dom";
+import { styled } from "styled-components";
 
 const Title = styled.h1`
   font-size: 1.5em;
   text-align: center;
-  color: #BF4F74;
+  color: #bf4f74;
   width: auto;
 `;
 const Nav = styled.nav`
   flex-direction: row;
-`
+`;
 
 export default function Root() {
   return (
@@ -28,8 +28,8 @@ export default function Root() {
         </Nav>
       </div>
       <div id="detail">
-        <Outlet/>
+        <Outlet />
       </div>
     </>
-  )
+  );
 }

@@ -1,23 +1,22 @@
-import { Instance, onSnapshot, types } from 'mobx-state-tree'
+import { Instance, onSnapshot, types } from "mobx-state-tree";
 import { createContext, useContext } from "react";
-import TaskStore from './TaskStore';
+import TaskStore from "./TaskStore";
 
 const RootModel = types.model({
-    task: TaskStore
+  task: TaskStore,
 });
 
 let initialState = RootModel.create({
-  task: {}
+  task: {},
 });
 
-
-  const data = localStorage.getItem("rootState");
-  if (data) {
-    const json = JSON.parse(data);
-    if (RootModel.is(json)) {
-      initialState = RootModel.create(json);
-    }
+const data = localStorage.getItem("rootState");
+if (data) {
+  const json = JSON.parse(data);
+  if (RootModel.is(json)) {
+    initialState = RootModel.create(json);
   }
+}
 
 export const rootStore = initialState;
 
