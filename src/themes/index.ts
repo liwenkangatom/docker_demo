@@ -1,7 +1,6 @@
 // my-theme.ts
-import { DefaultTheme } from "styled-components";
 
-const cardXTheme: DefaultTheme = {
+const cardXTheme = {
   borderRadius: "5px",
 
   colors: {
@@ -18,7 +17,7 @@ const cardXTheme: DefaultTheme = {
   },
 };
 
-const aeonTheme: DefaultTheme = {
+const aeonTheme = {
   borderRadius: "5px",
 
   colors: {
