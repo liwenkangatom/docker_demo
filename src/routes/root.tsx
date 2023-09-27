@@ -8,13 +8,11 @@ export default function Root() {
     
     <a className="flex-none text-xl font-semibold dark:text-white" href="http://localhost">Demo</a>
     <div className="flex flex-row items-center gap-5 mt-5 sm:justify-end sm:mt-0 sm:pl-5">
-    <Link className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500" to={`/home`}>Home</Link>
+    <Link className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500" to={`/`}>Home</Link>
     <Link className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500" to={`/about`}>About</Link>
   </div>
   </nav>
 </header>
-
-
       <div id="detail" className="container mx-auto p-4 m-0">
         <Outlet />
       </div>
