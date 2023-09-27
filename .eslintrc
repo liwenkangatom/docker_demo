@@ -21,5 +21,14 @@
         "react": {
             "version": "detect"
         }
+    },
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {},
+            {
+                "usePrettierrc": true
+            }
+        ]
     }
 }

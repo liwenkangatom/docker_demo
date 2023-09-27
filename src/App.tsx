@@ -5,10 +5,10 @@ import {
     RouterProvider
 } from "react-router-dom";
 import Root from './routes/root'
-import EmptyPage from "./pages/404";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import { rootStore, StoreProvider } from "./models/Root";
+import EmptyPage from "./pages/404"
+import HomePage from "./pages/HomePage"
+import AboutPage from "./pages/AboutPage"
+import { rootStore, StoreProvider } from "./models/Root"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
