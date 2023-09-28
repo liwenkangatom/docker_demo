@@ -1,6 +1,6 @@
-import { observer } from "mobx-react";
-import { useMst } from "../../models/Root";
 import { useState } from "react";
+import { observer } from "mobx-react";
+import { useMst } from "@models/Root";
 import { v4 as uuid } from "uuid";
 
 const TaskView = observer(() => {

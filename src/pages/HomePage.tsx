@@ -1,4 +1,4 @@
-import TaskView from "../components/TaskView";
+import TaskView from "@/components/TaskView";
 
 const HomePage = () => {
   return (
