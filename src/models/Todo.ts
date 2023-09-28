@@ -3,17 +3,17 @@ const Todo = types
   .model("Todo", {
     details: types.string,
     is_done: false,
-    id: types.string,
+    id: types.string
   })
-  .actions((self) => ({
+  .actions(self => ({
     markDone() {
       self.is_done = true;
-    },
+    }
   }))
-  .views((self) => ({
+  .views(self => ({
     status() {
       return self.is_done ? "Done" : "Not Done";
-    },
+    }
   }));
 
 export default Todo;

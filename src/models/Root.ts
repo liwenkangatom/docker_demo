@@ -3,11 +3,11 @@ import { createContext, useContext } from "react";
 import TaskStore from "./TaskStore";
 
 const RootModel = types.model({
-  task: TaskStore,
+  task: TaskStore
 });
 
 let initialState = RootModel.create({
-  task: {},
+  task: {}
 });
 
 const data = localStorage.getItem("rootState");
@@ -20,7 +20,7 @@ if (data) {
 
 export const rootStore = initialState;
 
-onSnapshot(rootStore, (snapshot) => {
+onSnapshot(rootStore, snapshot => {
   console.log("Snapshot: ", snapshot);
   localStorage.setItem("rootState", JSON.stringify(snapshot));
 });

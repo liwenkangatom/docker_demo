@@ -5,9 +5,9 @@
         "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended",
         "plugin:react/jsx-runtime",
-        "eslint-config-prettier",
         "plugin:jsx-a11y/recommended",
-        "plugin:prettier/recommended"
+        "plugin:prettier/recommended",
+        "eslint-config-prettier"
     ],
     "ignorePatterns": ["dist"],
     "parser": "@typescript-eslint/parser",

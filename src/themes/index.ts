@@ -13,8 +13,8 @@ const cardXTheme = {
     secondary03: "#cdf3f8",
     tertiary01: "#a3674b",
     tertiary02: "#d1b3a5",
-    tertiary03: "#ede1db",
-  },
+    tertiary03: "#ede1db"
+  }
 };
 
 const aeonTheme = {
@@ -30,12 +30,12 @@ const aeonTheme = {
     secondary03: "#e2f5f0",
     tertiary01: "#ffa822",
     tertiary02: "#ffd390",
-    tertiary03: "#ffeed3",
-  },
+    tertiary03: "#ffeed3"
+  }
 };
 const Themes = {
   cardX: cardXTheme,
-  aeon: aeonTheme,
+  aeon: aeonTheme
 };
 
 export default Themes;
